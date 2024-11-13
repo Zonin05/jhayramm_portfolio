@@ -1,0 +1,1001 @@
+/* General Body Styles */
+body {
+    font-family: 'Courier', sans-serif; /* Updated font family */
+    margin: 0;
+    padding: 0;
+    background-color: #E3DAC9; /* Changed to bone color */
+    color: #000;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100vh;
+    position: relative;
+    transition: background-color 0.3s ease;
+}
+
+
+
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #343a40;
+    color: #f8f9fa;
+}
+
+/* Container Styles */
+.container {
+    max-width: 800px;
+    text-align: justify;
+    margin: 0 auto; /* Center the container */
+    padding-top: 325px; /* Add some padding at the top */
+    z-index: 1;
+}
+
+.container1 {
+    position: absolute;
+    top: 75px;
+    left: 75px;
+    padding: 20px;
+}
+
+.container2 {
+    position: absolute;
+    top: 100px;
+    left: 150px;
+    padding: 10px;
+}
+
+h1[data-lang-text="projects"] {
+    margin: 0;
+}
+
+/* Container3 styling */
+.container3 {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+/* Box container styling */
+.box-container1 {
+    display: flex;
+    justify-content: center; /* Center the boxes in the container */
+    margin-top: 250px;
+    gap: 50px;
+    Margin-left: 100px;
+}
+
+/* Styling for each box */
+.p1 {
+    width: 400px;
+    height: 600px;
+    background-image: url('https://media.istockphoto.com/id/469850273/photo/lightning-with-dramatic-cloudscape.jpg?s=612x612&w=0&k=20&c=AwlD6sOgSOaX6MojEFnIiwzLMmX0WZ_bT-dTMgv-hXk=');
+    background-size: cover; /* Ensures image fills the box */
+    background-position: center; /* Centers the background image */
+    border-radius: 40px;
+    transition: all 0.3s ease;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2), 0px 5px 15px;
+    position: relative; /* Needed to position overlay inside the box */
+    overflow: hidden; /* Ensures overlay doesn't exceed box borders */
+}
+
+/* Show overlay on hover */
+.p1:hover .project-overlay {
+    opacity: 0.8;
+}
+
+/* Styling for each box */
+.p2 {
+    width: 400px;
+    height: 600px;
+    background-image: url('https://media.istockphoto.com/id/1438754625/photo/brooklyn-bridge.jpg?s=612x612&w=0&k=20&c=EimnFmsFYSzKFoDfSy_gYlc6Aoi-FryQu8-0jE_klFU=');
+    background-size: cover; /* Ensures image fills the box */
+    background-position: center; /* Centers the background image */
+    border-radius: 40px;
+    transition: all 0.3s ease;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2), 0px 5px 15px;
+    position: relative; /* Needed to position overlay inside the box */
+    overflow: hidden; /* Ensures overlay doesn't exceed box borders */
+}
+
+.p2:hover .project-overlay {
+    opacity: 0.8;
+}
+
+/* Styling for each box */
+.p3 {
+    width: 400px;
+    height: 600px;
+    background-image: url('https://img.freepik.com/premium-photo/financial-stock-market-graph-technology-abstract-background-vertical-mobile-wallpaper_892776-4424.jpg');
+    background-size: cover; /* Ensures image fills the box */
+    background-position: center; /* Centers the background image */
+    border-radius: 40px;
+    transition: all 0.3s ease;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2), 0px 5px 15px;
+    position: relative; /* Needed to position overlay inside the box */
+    overflow: hidden; /* Ensures overlay doesn't exceed box borders */
+}
+
+.p3:hover .project-overlay {
+    opacity: 0.8;
+}
+
+/* Styling for each box */
+.p4 {
+    width: 400px;
+    height: 600px;
+    background-color: #495057;
+    background-size: cover; /* Ensures image fills the box */
+    background-position: center; /* Centers the background image */
+    border-radius: 40px;
+    transition: all 0.3s ease;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2), 0px 5px 15px;
+    position: relative; /* Needed to position overlay inside the box */
+    overflow: hidden; /* Ensures overlay doesn't exceed box borders */
+}
+
+.p4:hover .project-overlay {
+    opacity: 0.8;
+}
+
+/* Box container styling */
+.box-container2 {
+    display: flex;
+    justify-content: middle; /* Center the boxes in the container */
+    margin-top: 250px;
+    gap: 50px;
+    Margin-left: 310px;
+}
+
+/* Styling for each box */
+.m1 {
+    width: 400px;
+    height: 600px;
+    background-image: url('https://img.freepik.com/premium-photo/public-library-scene-bookshelves-filled-with-diverse-collection-vertical-mobile-wallpaper_795881-33902.jpg');
+    background-size: cover; /* Ensures image fills the box */
+    background-position: center; /* Centers the background image */
+    border-radius: 40px;
+    transition: all 0.3s ease;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2), 0px 5px 15px;
+    position: relative; /* Needed to position overlay inside the box */
+    overflow: hidden; /* Ensures overlay doesn't exceed box borders */
+}
+
+/* Show overlay on hover */
+.m1:hover .project-overlay {
+    opacity: 0.8;
+}
+
+/* Styling for each box */
+.m2 {
+    width: 400px;
+    height: 600px;
+    background-image: url('https://cdn.sanity.io/images/drq70983/production/6b58d0074596c0c9d03a679320de06c8286e36eb-1999x1467.jpg?fit=max&auto=format');
+    background-size: cover; /* Ensures image fills the box */
+    background-position: center; /* Centers the background image */
+    border-radius: 40px;
+    transition: all 0.3s ease;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2), 0px 5px 15px;
+    position: relative; /* Needed to position overlay inside the box */
+    overflow: hidden; /* Ensures overlay doesn't exceed box borders */
+}
+
+.m2:hover .project-overlay {
+    opacity: 0.8;
+}
+
+/* Styling for each box */
+.m3 {
+    width: 400px;
+    height: 600px;
+    background-image: url('https://img.freepik.com/free-psd/shopping-vertical-background_23-2150409479.jpg');
+    background-size: cover; /* Ensures image fills the box */
+    background-position: center; /* Centers the background image */
+    border-radius: 40px;
+    transition: all 0.3s ease;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2), 0px 5px 15px;
+    position: relative; /* Needed to position overlay inside the box */
+    overflow: hidden; /* Ensures overlay doesn't exceed box borders */
+}
+
+.m3:hover .project-overlay {
+    opacity: 0.8;
+}
+
+
+
+/* Box container styling */
+.box-container5 {
+    display: flex;
+    justify-content: middle; /* Center the boxes in the container */
+    margin-top: 250px;
+    gap: 50px;
+    Margin-left: 310px;
+}
+
+/* Styling for each box */
+.c1 {
+    width: 400px;
+    height: 600px;
+    background-image: url('https://img.pikbest.com/wp/202347/minimalist-calendar-minimalistic-3d-with-stylish-design-on-light-blue-background_9763678.jpg!bw700');
+    background-size: cover; /* Ensures image fills the box */
+    background-position: center; /* Centers the background image */
+    border-radius: 40px;
+    transition: all 0.3s ease;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2), 0px 5px 15px;
+    position: relative; /* Needed to position overlay inside the box */
+    overflow: hidden; /* Ensures overlay doesn't exceed box borders */
+}
+
+/* Show overlay on hover */
+.c1:hover .project-overlay {
+    opacity: 0.8;
+}
+
+/* Styling for each box */
+.c2 {
+    width: 400px;
+    height: 600px;
+    background-image: url('https://thumbs.dreamstime.com/b/pie-chart-sale-headline-calculator-vertical-simple-photo-color-printed-paper-sheet-as-main-motif-black-background-50524308.jpg');
+    background-size: cover; /* Ensures image fills the box */
+    background-position: center; /* Centers the background image */
+    border-radius: 40px;
+    transition: all 0.3s ease;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2), 0px 5px 15px;
+    position: relative; /* Needed to position overlay inside the box */
+    overflow: hidden; /* Ensures overlay doesn't exceed box borders */
+}
+
+.c2:hover .project-overlay {
+    opacity: 0.8;
+}
+
+/* Styling for each box */
+.c3 {
+    width: 400px;
+    height: 600px;
+    background-image: url('https://img.freepik.com/premium-photo/clock-9-blank-space-text-ideas-time-concept-vertical-mobile-wallpaper_795881-33713.jpg');
+    background-size: cover; /* Ensures image fills the box */
+    background-position: center; /* Centers the background image */
+    border-radius: 40px;
+    transition: all 0.3s ease;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2), 0px 5px 15px;
+    position: relative; /* Needed to position overlay inside the box */
+    overflow: hidden; /* Ensures overlay doesn't exceed box borders */
+}
+
+.c3:hover .project-overlay {
+    opacity: 0.8;
+}
+
+/* Box container styling */
+.box-container3 {
+    display: flex;
+    justify-content: middle; /* Center the boxes in the container */
+    margin-top: 250px;
+    gap: 50px;
+    Margin-left: 310px;
+}
+
+/* Styling for each box */
+.js1 {
+    width: 400px;
+    height: 600px;
+    background-image: url('https://i.pinimg.com/originals/e1/27/03/e12703c233530c4649ac213c7954688e.jpg');
+    background-size: cover; /* Ensures image fills the box */
+    background-position: center; /* Centers the background image */
+    border-radius: 40px;
+    transition: all 0.3s ease;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2), 0px 5px 15px;
+    position: relative; /* Needed to position overlay inside the box */
+    overflow: hidden; /* Ensures overlay doesn't exceed box borders */
+}
+
+/* Show overlay on hover */
+.js1:hover .project-overlay {
+    opacity: 0.8;
+}
+
+/* Styling for each box */
+.js2 {
+    width: 400px;
+    height: 600px;
+    background-image: url('https://img.freepik.com/free-vector/dollar-sign-pattern-background_23-2150981635.jpg');
+    background-size: cover; /* Ensures image fills the box */
+    background-position: center; /* Centers the background image */
+    border-radius: 40px;
+    transition: all 0.3s ease;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2), 0px 5px 15px;
+    position: relative; /* Needed to position overlay inside the box */
+    overflow: hidden; /* Ensures overlay doesn't exceed box borders */
+}
+
+.js2:hover .project-overlay {
+    opacity: 0.8;
+}
+
+/* Styling for each box */
+.js3 {
+    width: 400px;
+    height: 600px;
+    background-image: url('https://media.istockphoto.com/id/1322199174/photo/meal-plan-concept-hard-light.jpg?s=612x612&w=0&k=20&c=6XuA4I3sy94ougcq7Yrz52mR3s27QBjDeqRttsc_e2w=');
+    background-size: cover; /* Ensures image fills the box */
+    background-position: center; /* Centers the background image */
+    border-radius: 40px;
+    transition: all 0.3s ease;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2), 0px 5px 15px;
+    position: relative; /* Needed to position overlay inside the box */
+    overflow: hidden; /* Ensures overlay doesn't exceed box borders */
+}
+
+.js3:hover .project-overlay {
+    opacity: 0.8;
+}
+
+/* Box container styling */
+.box-container4 {
+    display: flex;
+    justify-content: middle; /* Center the boxes in the container */
+    margin-top: 250px;
+    gap: 50px;
+    Margin-left: 520px;
+}
+
+/* Styling for each box */
+.j1 {
+    width: 400px;
+    height: 600px;
+    background-image: url('https://plus.unsplash.com/premium_photo-1681429766540-f05bd18b4002?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y2l0eSUyMGJ1aWxkaW5nJTIwNGslMjB3YWxscGFwZXJ8ZW58MHx8MHx8fDA%3D');
+    background-size: cover; /* Ensures image fills the box */
+    background-position: center; /* Centers the background image */
+    border-radius: 40px;
+    transition: all 0.3s ease;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2), 0px 5px 15px;
+    position: relative; /* Needed to position overlay inside the box */
+    overflow: hidden; /* Ensures overlay doesn't exceed box borders */
+}
+
+/* Show overlay on hover */
+.j1:hover .project-overlay {
+    opacity: 0.8;
+}
+
+/* Styling for each box */
+.j2 {
+    width: 400px;
+    height: 600px;
+    background-image: url('https://img.freepik.com/premium-photo/empty-state-art-storehouse-ready-new-inventory-storage-vertical-mobile-wallpaper_896558-15933.jpg');
+    background-size: cover; /* Ensures image fills the box */
+    background-position: center; /* Centers the background image */
+    border-radius: 40px;
+    transition: all 0.3s ease;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2), 0px 5px 15px;
+    position: relative; /* Needed to position overlay inside the box */
+    overflow: hidden; /* Ensures overlay doesn't exceed box borders */
+}
+
+.j2:hover .project-overlay {
+    opacity: 0.8;
+}
+
+/* Box container styling */
+.box-container6 {
+    display: flex;
+    justify-content: middle; /* Center the boxes in the container */
+    margin-top: 250px;
+    gap: 50px;
+    Margin-left: 760px;
+}
+
+/* Styling for each box */
+.b1 {
+    width: 400px;
+    height: 600px;
+    background-image: url('https://i.pinimg.com/736x/f9/42/16/f942166045ef57e0f66714ede373228e.jpg');
+    background-size: cover; /* Ensures image fills the box */
+    background-position: center; /* Centers the background image */
+    border-radius: 40px;
+    transition: all 0.3s ease;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2), 0px 5px 15px;
+    position: relative; /* Needed to position overlay inside the box */
+    overflow: hidden; /* Ensures overlay doesn't exceed box borders */
+}
+
+.b1:hover .project-overlay {
+    opacity: 0.8;
+}
+
+/* Styling for button1 */
+button1 {
+    background-color: #ffffff; /* Green background */
+    color: rgb(0, 0, 0); /* White text */
+    padding: 10px 20px; /* Padding for the button */
+    font-size: 16px; /* Font size */
+    border: none; /* Remove border */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth background color change */
+}
+
+button1:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+
+/* Project overlay styling */
+.project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0; /* Hidden initially */
+    transition: opacity 0.4s ease; /* Smooth transition */
+    border-radius: inherit; /* Matches the .p1 border radius */
+    text-align: center;
+}
+
+/* Text styling inside overlay */
+.project-overlay h2 {
+    font-size: 1.8em;
+    margin: 10px 0;
+}
+
+.project-overlay p {
+    font-size: 1em;
+    margin: 10px;
+}
+
+p{
+   font-size: 20px; 
+}
+/* Heading and Paragraph Styles */
+h1 {
+    margin-left: 0; /* Align text to the left */
+}
+
+/* Link Styles */
+a {
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: #000;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Icon Button Container */
+.icon-btn {
+    position: absolute;
+    top: 50px;
+    right: 70px;
+    display: flex;
+    gap: 10px;
+    z-index: 2;
+}
+
+/* Individual Icon Styles */
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: relative;
+}
+
+body.dark-mode .icon-btn .icon {
+    background-color: #f8f9fa;
+    color: #000;
+}
+
+.icon:hover {
+    background-color: #0056b3;
+}
+
+/* Dropdown Menu Styles */
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 45px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden; /* Hide scrollbar */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    scrollbar-width: none; /* For Firefox */
+}
+
+.dropdown a {
+    display: block;
+    padding: 6px;
+    text-decoration: none;
+    color: #000;
+    white-space: nowrap;
+    position: relative;
+    scrollbar-width: none; /* For Firefox */
+}
+
+.dropdown a:hover {
+    background-color: #ddd;
+    scrollbar-width: none; /* For Firefox */
+}
+
+.dropdown a.selected::after {
+    content: '✓';
+    position: absolute;
+    right: 10px;
+    color: rgb(0, 0, 0);
+    scrollbar-width: none; /* For Firefox */
+}
+
+.Back{
+    position: absolute;
+    top: 100px;
+    left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    z-index: 2;
+}
+
+/* Hamburger Menu Styles */
+.hamburger-btn {
+    position: absolute;
+    top: 45px;
+    left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    z-index: 2;
+}
+
+.hamburger-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Dark Mode Styles for Hamburger */
+body.dark-mode .hamburger-btn {
+    background-color: #f8f9fa;
+    color: #000;
+}
+
+/* Dark Mode Styles for Hamburger */
+body.dark-mode .Back {
+    background-color: #f8f9fa;
+    color: #000;
+}
+
+.Back:hover {
+    background-color: #0056b3;
+}
+
+body.dark-mode .hamburger-btn:hover {
+    background-color: #0056b3;
+}
+
+body.dark-mode .Back:hover {
+    background-color: #0056b3;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+    z-index: 3;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.sidebar a {
+    font-size: 1.5rem;
+    margin: 15px 0;
+}
+
+/* Overlay Styles */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    transition: opacity 0.3s ease;
+}
+
+/* Sidebar and Overlay Active States */
+.sidebar.open {
+    display: block;
+    transform: translateX(0);
+}
+
+.overlay.active {
+    display: block;
+    opacity: 1;
+}
+
+.social-icons {
+    position: relative;
+    width: 500px; /* adjust as needed */
+    height: 500px; /* adjust as needed */
+}
+
+/* Base style for all social icons */
+.social-icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.4s ease;
+    background-size: cover;
+    background-position: center;
+    position: absolute; /* Positioning without margins */
+}
+
+/* Hover effect */
+.social-icon:hover {
+    transform: scale(1.1); /* Slightly enlarges the icon */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Adds a shadow */
+}
+
+/* Specific positioning for each icon */
+.instagram {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1200px-Instagram_logo_2022.svg.png');
+    top: 300px;
+    left: 200px;
+}
+
+.linkedin {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRokEYt0yyh6uNDKL8uksVLlhZ35laKNQgZ9g&s');
+    top: 300px;
+    left: 380px;
+}
+
+.github {
+    background-image: url('https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_960_720.png');
+    top: 300px;
+    left: 550px;
+}
+
+.reddit {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiZUkG9d1o5ID5hRCvHSRfZCesJpzAYlhw3A&s');
+    top: 450px;
+    left: 470px;
+}
+
+.stack {
+    background-image: url('https://static-00.iconduck.com/assets.00/stack-overflow-icon-2048x2048-7ohycn5z.png');
+    top: 450px;
+    left: 290px;
+}
+
+/* Profile section container */
+.profile-section {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 50px;
+    left: 125px;
+    gap: 20px;
+}
+
+/* Profile picture styling */
+.profile-pic {
+    width: 200px; 
+    height: 200px;
+    background-image: url('P1(ALT).jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+/* Expanded profile picture styling */
+.profile-pic.expanded {
+    width: 500px;
+    height: 500px;
+    top: 50%;
+    left: 50%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    z-index: 100;
+}
+
+/* Profile text styling */
+.profile-text {
+    background-color: #e3dac9; /* Light mode background */
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* Dark Mode for Profile Text */
+body.dark-mode .profile-text {
+    background-color: #495057; /* Darker color for dark mode */
+    color: #f8f9fa; /* Light text color for readability */
+}
+
+/* About Me heading */
+.profile-text h1 {
+    font-size: 24px;
+    color: #333;
+    margin: 0;
+}
+
+/* Dark Mode for Profile Text */
+body.dark-mode .profile-text h1 {
+    background-color: #495057; /* Darker color for dark mode */
+    color: #ffffff; /* Light text color for readability */
+}
+
+/* Content section for two-column layout */
+.content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 250px;
+    margin-left: 280px;
+    width: 80%;
+}
+
+/* Column styling */
+.column {
+    width: 48%;
+}
+
+/* General styling for section headings */
+.content h2 {
+    margin-top: 0;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers content vertically */
+    align-items: center; /* Centers content horizontally */
+    padding: 20px; /* Adds padding around the form */
+    width: 30%; /* Adjust width as needed */
+    height: auto; /* Adjust height to fit content */
+    margin-left: auto; /* Centers the form horizontally */
+    margin-right: 200px; /* Centers the form horizontally */
+    margin-top: 200px; /* Adjust top margin */
+    background-color: #e3dac9; /* Optional: adds a background to the form */
+    border-radius: 8px; /* Optional: adds rounded corners to the form */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds a shadow effect */
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column; /* Stack the input containers vertically */
+    justify-content: center;
+    margin-bottom: 15px;
+    width: 70%; /* Ensure the row takes the full width of the form */
+}
+
+.input-container {
+    width: 100%; /* Take full width within the form */
+    max-width: 400px; /* Optional: Limit the maximum width */
+    margin-bottom: 15px;
+}
+
+.input-container label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left; /* Keeps labels left aligned */
+}
+
+.input-container input, .input-container textarea {
+    width: 100%; /* Ensure inputs stretch to fill the container */
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    margin-top: 5px; /* Add spacing between label and input */
+}
+
+.input-container textarea {
+    resize: vertical;
+}
+
+.send-btn {
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: center; /* Align the button to the center */
+    width: 100%;
+    max-width: 300px; /* Optional: Limit the maximum width */
+}
+
+.send-btn:hover {
+    background-color: #45a049;
+}
+
+.send-btn:active {
+    background-color: #3e8e41;
+}
+
+/* Dark Mode Styling for Contact Form */
+body.dark-mode .contact-form {
+    background-color: #343a40; /* Dark mode background */
+    color: #f8f9fa; /* Light text color for contrast */
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* Softer shadow for dark mode */
+}
+
+/* Dark Mode for Form Row */
+body.dark-mode .form-row {
+    color: #f8f9fa;
+}
+
+/* Dark Mode Styling for Input Containers */
+body.dark-mode .input-container input,
+body.dark-mode .input-container textarea {
+    background-color: #495057; /* Darker input field background */
+    color: #f8f9fa; /* Light text color */
+    border: 1px solid #6c757d; /* Subtle border color */
+}
+
+/* Dark Mode Styling for Send Button */
+body.dark-mode .send-btn {
+    background-color: #6c757d; /* Darker button background */
+    color: #f8f9fa; /* Light text color */
+}
+
+/* Dark Mode Styling for Send Button Hover and Active States */
+body.dark-mode .send-btn:hover {
+    background-color: #5a6268; /* Slightly lighter for hover */
+}
+
+body.dark-mode .send-btn:active {
+    background-color: #495057; /* Darker shade for active state */
+}
+
+.project {
+    width: 120px;
+    height: 120px;
+    border-radius: 25%;
+    border: 2px solid #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+    cursor: pointer;
+    background-size: 100%;
+    background-position: center;
+    position: absolute;
+}
+
+.project.dark-mode {
+    width: 120px;
+    height: 120px;
+    border-radius: 25%;
+    border: 2px solid #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+    cursor: pointer;
+    background-size: 100%;
+    background-position: center;
+    position: absolute;
+    box-shadow: 0 4px 8px rgb(243, 225, 225);
+}
+
+/* Hover effect */
+.project:hover {
+    transform: scale(1.1); /* Slightly enlarges the icon */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Adds a shadow */
+}
+
+/* Active (clicked) effect */
+.project.clicked {
+    transform: scale(0.95); /* Slightly reduces the icon size to give a clicked effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Stronger shadow for clicked state */
+    background-color: rgba(0, 0, 0, 0.1); /* Optional background color change for clicked effect */
+}
+
+/* Specific styling for the python icon */
+.python {
+    background-image: url('https://cdn.icon-icons.com/icons2/3406/PNG/512/python_logo_icon_216351.png');
+    top: 250px;
+    left: 900px;
+}
+
+.sql {
+    background-image: url('https://images.freeimages.com/fic/images/icons/2779/simple_icons/4096/mysql_4096_black.png');
+    top: 330px;
+    left: 750px;
+}
+
+.javascript {
+    background-image: url('https://cdn1.iconfinder.com/data/icons/round-icons-vol-2/512/Code_javascript_development-512.png');
+    top: 330px;
+    left: 1050px;
+}
+
+.blender {
+    background-image: url('https://icons.veryicon.com/png/o/object/material-design-icons-1/blender-17.png');
+    top: 470px;
+    left: 750px;
+}
+
+.lock {
+    background-image: url('https://cdn4.iconfinder.com/data/icons/defaulticon/icons/png/256x256/padlock-closed.png');
+    top: 400px;
+    left: 900px;
+}
+
+.java {
+    background-image: url('https://cdn-icons-png.flaticon.com/512/154/154878.png');
+    top: 470px;
+    left: 1050px;
+}
+
+.c {
+    background-image: url('https://i.pinimg.com/originals/1f/88/69/1f886933389dfdd361d7545fbf2be130.png');
+    top: 550px;
+    left: 900px;
+}
+
+/* Base style for all project titles */
+.project-titles p {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+}
+
+/* Positioning and specific styles for each title */
+.title-python { top: 200px; left: 400px; }
+.title-sql { top: 400px; left: 250px; }
+.title-js { top: 200px; left: 1350px; }
+.title-blender { top: 650px; left: 400px; }
+.title-java { top: 400px; left: 1450px; }
+.title-c { top: 650px; left: 1350px; }
+
+
+
